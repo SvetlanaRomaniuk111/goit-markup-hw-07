@@ -11,7 +11,7 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1157px) {
 		.address {
 			margin-left: auto;
 			margin-top: 16px;
@@ -22,7 +22,6 @@
 			margin-bottom: 12px;
 		}
 	}
-
 	.contacts {
 		font-size: 12px;
 		line-height: 1.16;
@@ -31,7 +30,11 @@
 
 	.hero {
 		width: 768px;
-		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/hero-bg-tab.jpg);
 	}
 
 	@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -39,7 +42,10 @@
 		screen and (min-resolution: 192dpi) and (min-width: 768px),
 		screen and (min-resolution: 2dppx) and (min-width: 768px) {
 		.hero {
-			background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			background-image: linear-gradient(
+					rgba(46, 47, 66, 0.7),
+					rgba(46, 47, 66, 0.7)
+				),
 				url(../images/hero-bg-tabg@2x.jpg);
 		}
 	}
@@ -55,7 +61,7 @@
 		margin-top: 36px;
 	}
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1440px) {
 		.feauters-list {
 			display: flex;
 			flex-wrap: wrap;
@@ -67,6 +73,25 @@
 			text-align: start;
 		}
 	}
+
+	/* .features-list-icon {
+		display: none;
+	}
+
+	.products {
+		display: none;
+	}
+
+	.feauters-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+		row-gap: 72px;
+	}
+
+	.features-list-title {
+		text-align: start;
+	} */
 
 	.features-list-item {
 		width: calc((100% - 24px) / 2);
@@ -85,6 +110,10 @@
 	.customers-list-link {
 		width: 168px;
 	}
+	/* 
+	.customers-list-item {
+		width: calc((100% - 48px) / 3);
+	} */
 
 	.footer-wrapper {
 		display: flex;
@@ -120,6 +149,18 @@
 
 	.footer-form-email {
 		width: 264px;
-        margin-right: 24px;
+		margin-right: 24px;
+	}
+	/* .portfolio {
+	padding-top: 64px;
+	padding-bottom: 648px;
+} */
+	.projects-foto {
+		width: 356px;
+		height: 300px;
+	}
+
+	.project-list-item {
+		width: calc((100% - 24px) / 2);
 	}
 }

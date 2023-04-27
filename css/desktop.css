@@ -1,12 +1,17 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
 	.container {
-		max-width: 1160px;
+		max-width: 1158px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.page-haeder-container {
+	.page-header-container {
 		display: flex;
 		align-items: center;
-		padding: 24px 15px;
+		padding-top: 24px;
+		padding-bottom: 24px;
 	}
 
 	.address-item {
@@ -15,24 +20,32 @@
 
 	.contacts {
 		font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
 		margin-right: 40px;
 	}
 
 	.hero {
-		width: 1200px;
+		width: 1440px;
 		padding-top: 188px;
 		padding-bottom: 188px;
-		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/hero-bg.jpg);
 	}
 
-	@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-		screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
-		screen and (min-resolution: 192dpi) and (min-width: 1200px),
-		screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+	@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+		screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1158px),
+		screen and (min-resolution: 192dpi) and (min-width: 1158px),
+		screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 		.hero {
-			background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg@2x.jpg);
+			background-image: linear-gradient(
+					rgba(46, 47, 66, 0.7),
+					rgba(46, 47, 66, 0.7)
+				),
+				url(../images/hero-bg@2x.jpg);
 		}
 	}
 
@@ -46,8 +59,8 @@
 	}
 
 	.features-list-title {
-        display: flex;
-        align-items: start;
+		display: flex;
+		align-items: start;
 		font-weight: 500;
 		font-size: 20px;
 		line-height: 1.2;
@@ -122,5 +135,12 @@
 	.modal-form-field {
 		margin-bottom: 0;
 	}
-	
+
+	.projects-foto {
+		width: 360px;
+		height: 300px;
+	}
+	.project-list-item {
+		flex-basis: calc((100% - 48px) / 3);
+	}
 }

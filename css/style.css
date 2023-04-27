@@ -63,7 +63,7 @@ button {
 
 /** ------------- HEADER ------------ */
 
-.page-haeder-container {
+.page-header-container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -97,10 +97,16 @@ button {
 }
 
 .mobile-menu-open {
-	border-color: transparent;
-	border: 0;
+	width: 32px;
+	height: 22px;
+	background: transparent;
+	stroke: #2e2f42;
+	border: transparent;
 	padding: 0;
-	line-height: 0;
+}
+
+.mobile-menu-open-icon {
+	fill: currentColor;
 }
 
 .mobile-social-list-link {
@@ -117,9 +123,6 @@ button {
 .mobile-social-list-item:not(:last-child) {
 	margin-right: 56px;
 }
-
-
-
 
 /* .mobile-menu {
 	position: fixed;
@@ -148,6 +151,7 @@ button {
 	color: var(--secondary-text-color);
 	transition: color var(--function-trasition);
 }
+
 .nav-link:hover,
 .nav-link:focus {
 	color: var(--accent-color);
@@ -176,7 +180,7 @@ button {
 	margin-left: auto;
 }
 
-.contacts {	
+.contacts {
 	font-style: normal;
 	color: var(--body-text-color);
 
@@ -190,7 +194,7 @@ button {
 
 /** -------------HERO-------------- */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 427px) {
 	.hero {
 		width: 100%;
 	}
@@ -205,7 +209,11 @@ button {
 	padding-top: 112px;
 	padding-bottom: 112px;
 	background-color: var(--secondary-text-color);
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob.jpg);
+	background-image: linear-gradient(
+			rgba(46, 47, 66, 0.7),
+			rgba(46, 47, 66, 0.7)
+		),
+		url(../images/hero-bg-mob.jpg);
 	background-size: cover;
 }
 
@@ -214,7 +222,10 @@ button {
 	screen and (min-resolution: 192dpi) and (max-width: 767px),
 	screen and (min-resolution: 2dppx) and (max-width: 767px) {
 	.hero {
-		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
 			url(../images/hero-bg-mob@2x.jpg);
 	}
 }
@@ -274,16 +285,7 @@ button {
 	border-radius: 4px;
 }
 
-/* .features-list-item {
-
-	width: 264px;
-} */
-
-/* .feauters-list {
-	display: flex;
-	gap: 24px;
-} */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.features-list-item:not(:last-child) {
 		margin-bottom: 72px;
 	}
@@ -307,10 +309,9 @@ button {
 	color: var(--body-text-color);
 }
 
-
 /** ------------ WHAT ARE WE DOING -------------- */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1157px) {
 	.features-list-icon {
 		display: none;
 	}
@@ -339,7 +340,6 @@ button {
 	gap: 24px;
 }
 
-
 /** --------------- OUR TEAM ----------------- */
 
 .team {
@@ -351,7 +351,8 @@ button {
 .team-list-item {
 	display: inline;
 	background-color: var(--primary-white-color);
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
 }
 
@@ -447,7 +448,7 @@ button {
 	row-gap: 72px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.customers-list-item {
 		width: calc((100% - 16px) / 2);
 	}
@@ -581,7 +582,6 @@ button {
 }
 
 .footer-form-email {
-
 	margin-bottom: 16px;
 	width: 100%;
 	height: 40px;
@@ -635,8 +635,8 @@ button {
 /** --------------- PORTFOLIO ----------------- */
 
 .portfolio {
-	padding-top: 93px;
-	padding-bottom: 120px;
+	padding-top: 48px;
+	padding-bottom: 48px;
 }
 
 .btn-section {
@@ -644,6 +644,8 @@ button {
 	justify-content: center;
 	margin-bottom: 72px;
 	gap: 24px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 .btn-section-list {
@@ -661,7 +663,8 @@ button {
 	border-radius: 4px;
 	color: var(--logo-color);
 	background-color: var(--secondary-background-color);
-	transition: color var(--function-trasition), background-color var(--function-trasition),
+	transition: color var(--function-trasition),
+		background-color var(--function-trasition),
 		border-color var(--function-trasition), box-shadow var(--function-trasition);
 }
 
@@ -669,7 +672,8 @@ button {
 .btn-section-list:focus {
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-color: var(--accent-color);
 }
 
@@ -679,13 +683,19 @@ button {
 	gap: 48px 24px;
 }
 
+/* .projects-foto {
+	width: 396px;
+	height: 280px;
+} */
+
 .project-list-item {
 	transition: box-shadow var(--function-trasition);
 }
 
 .project-list-item:hover,
 .project-list-item:focus {
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-list-img-wrapper {
@@ -748,7 +758,8 @@ button {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(46, 47, 66, 0.4);
-	transition: opacity var(--function-trasition), visibility var(--function-trasition);
+	transition: opacity var(--function-trasition),
+		visibility var(--function-trasition);
 }
 
 .backdrop.is-hidden {
@@ -762,11 +773,12 @@ button {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 72px 24px 24px 24px;
-	width: 408px;
+	padding: 72px 16px 24px 16px;
+	width: 392px;
 	/* height: 584px; */
 	background: var(--modal-background-color);
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 }
 
@@ -782,7 +794,8 @@ button {
 	border-radius: 50%;
 	background: var(--footer-text-color);
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	transition: fill var(--function-trasition), background-color var(--function-trasition),
+	transition: fill var(--function-trasition),
+		background-color var(--function-trasition),
 		border-color var(--function-trasition);
 }
 

@@ -56,8 +56,10 @@
 		width: 24px;
 		height: 24px;
 		border-radius: 50%;
-		background-color: var(--footer-text-color);
-		border: 1px solid var(--secondary-text-color);
+		color: #2E2F42;
+		background: rgba(231, 233, 252, 0.1);
+		border: 1px solid rgba(46, 47, 66, 0.1);
+
 	}
 
 	.mobile-menu-close-icon {
