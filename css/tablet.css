@@ -12,13 +12,13 @@
 	}
 
 	@media screen and (max-width: 1157px) {
-		.address {
+		.header-contacts {
 			margin-left: auto;
 			margin-top: 16px;
 			margin-bottom: 16px;
 		}
 
-		.address-contacts:not(:last-child) {
+		.contacts-item:not(:last-child) {
 			margin-bottom: 12px;
 		}
 	}
@@ -62,19 +62,19 @@
 	}
 
 	@media screen and (max-width: 1440px) {
-		.feauters-list {
+		.about-list {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 24px;
 			row-gap: 72px;
 		}
 
-		.features-list-title {
+		.about-list-title {
 			text-align: start;
 		}
 	}
 
-	.features-list-item {
+	.about-list-item {
 		width: calc((100% - 24px) / 2);
 	}
 

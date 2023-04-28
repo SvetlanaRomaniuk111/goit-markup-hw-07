@@ -145,16 +145,16 @@ button {
 	margin-right: 56px;
 }
 
-.nav-menu {
+.header-list {
 	display: flex;
 	align-items: center;
 }
 
-.nav-items-pages:not(:last-child) {
+.header-item:not(:last-child) {
 	margin-right: 40px;
 }
 
-.nav-link {
+.header-link {
 	position: relative;
 	font-weight: 500;
 	padding-top: 24px;
@@ -163,12 +163,12 @@ button {
 	transition: color var(--typical-transitions);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.header-link:hover,
+.header-link:focus {
 	color: var(--pressed-state-color);
 }
 
-.current.nav-link::after {
+.current.header-link::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -182,11 +182,11 @@ button {
 	transition: background-color var(--typical-transitions);
 }
 
-.current.nav-link {
+.current.header-link {
 	color: var(--pressed-state-color);
 }
 
-.address {
+.header-contacts {
 	font-style: normal;
 	margin-left: auto;
 }
@@ -275,12 +275,12 @@ button {
 
 /** --------------- ABOUT ----------------- */
 
-.features {
+.about {
 	padding-top: 96px;
 	padding-bottom: 96px;
 }
 
-.features-list-icon {
+.about-list-icon {
 	display: flex;
 	width: 264px;
 	height: 112px;
@@ -291,12 +291,12 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-	.features-list-item:not(:last-child) {
+	.about-list-item:not(:last-child) {
 		margin-bottom: 72px;
 	}
 }
 
-.features-list-title {
+.about-list-title {
 	font-size: 36px;
 	line-height: 1.11;
 	text-align: center;
@@ -306,7 +306,7 @@ button {
 	color: var(--main-text-color);
 }
 
-.features-description {
+.about-description {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
@@ -317,7 +317,7 @@ button {
 /** ------------ WHAT ARE WE DOING -------------- */
 
 @media screen and (max-width: 1157px) {
-	.features-list-icon {
+	.about-list-icon {
 		display: none;
 	}
 
