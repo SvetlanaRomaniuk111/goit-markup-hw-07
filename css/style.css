@@ -321,16 +321,16 @@ button {
 		display: none;
 	}
 
-	.products {
+	.work {
 		display: none;
 	}
 }
 
-.products {
+.work {
 	padding-bottom: 116px;
 }
 
-.products-title {
+.work-title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.11;
@@ -340,7 +340,7 @@ button {
 	color: var(--main-text-color);
 }
 
-.products-item {
+.work-item {
 	display: flex;
 	gap: 24px;
 }
@@ -807,8 +807,6 @@ button {
 	margin-bottom: 16px;
 }
 
-.modal-form {
-}
 .modal-field {
 	margin-bottom: 8px;
 }
