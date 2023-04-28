@@ -1,3 +1,15 @@
+:root {
+	--primary-state-color: #4d5ae5;
+	--pressed-state-color: #404bbf;
+	--second-text-color: #434455;
+	--main-text-color: #2e2f42;
+	--main-bgr-color: #ffffff;
+	--second-bgr-color: #f4f4fd;
+	--subtle-text-color: #8e8f99;
+	--footer-text-color: #e7e9fc;
+	--typical-transitions: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 428px) {
 	.hero {
 		width: 428px;
@@ -21,13 +33,14 @@
 		z-index: 1000;
 		top: 0;
 		left: 0;
-		background-color: #ffffff;
-		box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-			0px 1px 6px rgba(46, 47, 66, 0.08);
+		background-color: var(--main-bgr-color);
+		box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+			0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 		opacity: 0;
 		visibility: hidden;
 		pointer-events: none;
-		transition: opacity var(--function-trasition), visibility var(--function-trasition);
+		transition: opacity var(--typical-transitions),
+			visibility var(--typical-transitions);
 	}
 
 	.mobile-menu.is-open {
@@ -56,10 +69,9 @@
 		width: 24px;
 		height: 24px;
 		border-radius: 50%;
-		color: #2E2F42;
+		color: #2e2f42;
 		background: rgba(231, 233, 252, 0.1);
 		border: 1px solid rgba(46, 47, 66, 0.1);
-
 	}
 
 	.mobile-menu-close-icon {
@@ -78,13 +90,12 @@
 		line-height: 1.11;
 		letter-spacing: 0.02em;
 		text-transform: capitalize;
-		color: var(--secondary-text-color);
+		color: var(--main-text-color);
 	}
 
 	.current.mobile-link {
-		color: var(--accent-color);
+		color: var(--pressed-state-color);
 	}
-
 
 	.mobile-link-contacts {
 		font-weight: 700;
@@ -92,7 +103,7 @@
 		line-height: 1.11;
 		letter-spacing: 0.02em;
 		text-transform: capitalize;
-		color: var(--accent-color);
+		color: var(--pressed-state-color);
 	}
 
 	.mobile-menu-address {
@@ -106,7 +117,7 @@
 		line-height: 1.11;
 		letter-spacing: 0.02em;
 		text-transform: capitalize;
-		color: var(--logo-color);
+		color: var(--primary-state-color);
 	}
 
 	.mobile-menu-mail {
@@ -114,7 +125,7 @@
 		font-size: 20px;
 		line-height: 1.2;
 		letter-spacing: 0.02em;
-		color: var(--body-text-color);
+		color: var(--second-text-color);
 	}
 
 	.mobile-menu-address {

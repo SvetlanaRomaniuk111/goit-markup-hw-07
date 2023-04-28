@@ -24,10 +24,10 @@
 	<body>
 		<!--------------------- HEADER ------------------------->
 		<header class="header">
-			<div class="container page-header-container">
-				<nav class="nav">
-					<a class="logo link" href="./index.html"
-						>Web <span class="logostudio">Studio</span></a
+			<div class="container header-container">
+				<nav class="header-navigation">
+					<a class="header-logo link" href="./index.html"
+						>Web <span class="studio" style="color: #2e2f42">Studio</span></a
 					>
 					<ul class="nav-menu list">
 						<li class="nav-items-pages">
@@ -65,7 +65,11 @@
 				<div class="container mobile-menu-container">
 					<div class="mobile-wrapper">
 						<div>
-							<button class="mobile-menu-close-btn" data-menu-close>
+							<button
+								type="button"
+								class="mobile-menu-close-btn"
+								data-menu-close
+							>
 								<svg class="mobile-menu-close-icon">
 									<use href="./images/icons.svg#icon-close-btn"></use>
 								</svg>
@@ -490,44 +494,44 @@
 				<div class="container">
 					<h2 class="customers-title">Customers</h2>
 					<ul class="customers-list list">
-						<li class="customers-list-item">
-							<a href="" class="customers-list-link">
-								<svg class="customers-list-icon" width="104" height="56">
+						<li class="customers-item">
+							<a href="" class="customers-link">
+								<svg class="customers-icon" width="104" height="56">
 									<use href="./images/icons.svg#icon-logo-client-one"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="customers-list-item">
-							<a href="" class="customers-list-link">
-								<svg class="customers-list-icon" width="104" height="56">
+						<li class="customers-item">
+							<a href="" class="customers-link">
+								<svg class="customers-icon" width="104" height="56">
 									<use href="./images/icons.svg#icon-logo-client-two"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="customers-list-item">
-							<a href="" class="customers-list-link">
-								<svg class="customers-list-icon" width="104" height="56">
+						<li class="customers-item">
+							<a href="" class="customers-link">
+								<svg class="customers-icon" width="104" height="56">
 									<use href="./images/icons.svg#icon-logo-client-three"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="customers-list-item">
-							<a href="" class="customers-list-link">
-								<svg class="customers-list-icon" width="104" height="56">
+						<li class="customers-item">
+							<a href="" class="customers-link">
+								<svg class="customers-icon" width="104" height="56">
 									<use href="./images/icons.svg#icon-logo-client-four"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="customers-list-item">
-							<a href="" class="customers-list-link">
-								<svg class="customers-list-icon" width="104" height="56">
+						<li class="customers-item">
+							<a href="" class="customers-link">
+								<svg class="customers-icon" width="104" height="56">
 									<use href="./images/icons.svg#icon-logo-client-five"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="customers-list-item">
-							<a href="" class="customers-list-link">
-								<svg class="customers-list-icon" width="104" height="56">
+						<li class="customers-item">
+							<a href="" class="customers-link">
+								<svg class="customers-icon" width="104" height="56">
 									<use href="./images/icons.svg#icon-logo-client-six"></use>
 								</svg>
 							</a>
@@ -542,7 +546,7 @@
 				<div class="footer-wrapper">
 					<div class="footer-logo-description">
 						<a class="footer-logo link" href="./index.html"
-							>Web<span class="footer-logostudio">Studio</span></a
+							>Web<span class="studio" style="color: #f4f4fd">Studio</span></a
 						>
 						<p class="footer-description">
 							Increase the flow of customers and sales for your business with
@@ -585,9 +589,6 @@
 						</ul>
 					</div>
 				</div>
-
-				<!-------------------- MODAL ------------------------->
-
 				<form class="footer-modal-form">
 					<p class="footer-form-description">Subscribe</p>
 					<div class="footer-modal-form-wrapper">
@@ -614,84 +615,96 @@
 			</div>
 		</footer>
 
+		<!-------------------- MODAL ------------------------->
+
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<button type="button" class="modal-close-btn" data-modal-close>
-					<svg class="modal-close-btn-icon">
-						<use href="./images/icons.svg#icon-close"></use>
+				<button type="button" data-modal-close class="modal-close-btn">
+					<svg class="close-btn-icon" width="8" height="8">
+						<use href="./images/icons.svg#icon-close-btn"></use>
 					</svg>
 				</button>
+
+				<p class="modal-title">Leave your contacts and we will call you back</p>
 				<form class="modal-form">
-					<p class="modal-form-title">
-						Leave your contacts and we will call you back
-					</p>
-					<label class="modal-form-field">
-						<span class="modal-form-input-desk">Name</span>
-						<span class="modal-form-input-wrapper">
+					<div class="modal-field">
+						<label class="input-text modal-text" for="user-name">Name</label>
+						<div class="input-wrap">
 							<input
+								class="modal-input"
+								id="user-name"
+								name="user-name"
+								autofocus
 								type="text"
-								name="user_name"
-								class="modal-form-input"
-								required
-								pattern="^[a-zA-Z]+$"
 								minlength="2"
+								pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
 							/>
-							<svg class="modal-form-input-icon">
-								<use href="./images/icons.svg#icon-name"></use>
+							<svg class="modal-icon" width="18" height="24">
+								<use href="./images/icons.svg#icon-person"></use>
 							</svg>
-						</span>
-					</label>
-					<label class="modal-form-field">
-						<span class="modal-form-input-desk">Phone</span>
-						<span class="modal-form-input-wrapper">
+						</div>
+					</div>
+					<div class="modal-field">
+						<label class="input-text modal-text" for="user-tel">Phone</label>
+						<div class="input-wrap">
 							<input
+								class="modal-input"
+								id="user-tel"
+								name="user-tel"
 								type="tel"
-								name="user_phone"
-								class="modal-form-input"
-								required
-								pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-								title="xxx-xxx-xx-xx"
+								pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+								title="+xxx (xx) xxx-xx-xx"
 							/>
-							<svg class="modal-form-input-icon">
+							<svg class="modal-icon" width="18" height="24">
 								<use href="./images/icons.svg#icon-phone"></use>
 							</svg>
-						</span>
-					</label>
-					<label class="modal-form-field">
-						<span class="modal-form-input-desk">Email</span>
-						<span class="modal-form-input-wrapper">
+						</div>
+					</div>
+					<div class="modal-field">
+						<label class="input-text modal-text" for="user-email">Email</label>
+						<div class="input-wrap">
 							<input
+								class="modal-input"
+								id="user-email"
+								name="user-email"
 								type="email"
-								name="user_email"
-								class="modal-form-input"
-								required
 							/>
-							<svg class="modal-form-input-icon">
+							<svg class="modal-icon" width="18" height="24">
 								<use href="./images/icons.svg#icon-email"></use>
 							</svg>
-						</span>
-					</label>
-					<label class="modal-form-field-comment">
-						<span class="modal-form-input-desk">Comment</span>
+						</div>
+					</div>
+
+					<div class="modal-comment">
+						<label class="input-text modal-text" for="user-text">Comment</label>
 						<textarea
-							name="user_massage"
-							class="modal-form-massage"
+							class="modal-textarea"
+							id="user-text"
+							name="user-text"
 							placeholder="Text input"
 						></textarea>
-					</label>
-
-					<input
-						id="user-policy"
-						type="checkbox"
-						name="user_policy"
-						class="modal-form-chek visually-hiden"
-					/>
-					<label for="user-policy" class="modal-form-chek-desk"
-						>I accept the terms and conditions of the
-						<a class="modal-form-link" href="">Privacy Policy</a></label
-					>
-
-					<button type="submit" class="modal-form-submit">Send</button>
+					</div>
+					<div class="modal-field-privacy">
+						<input
+							class="input-check visually-hidden"
+							id="privacy"
+							name="privacy"
+							type="checkbox"
+							value="true"
+						/>
+						<label for="privacy" class="check-text">
+							<span>
+								<svg class="check-icon" width="12" height="10">
+									<use href="./images/icons.svg#icon-check"></use>
+								</svg> </span
+							>I accept the terms and conditions of the&nbsp;<a
+								href=""
+								style="color: #4d5ae5"
+								>Privacy Policy</a
+							>
+						</label>
+					</div>
+					<button type="submit" class="modal-form-btn button">Send</button>
 				</form>
 			</div>
 		</div>

@@ -46,7 +46,7 @@
 					rgba(46, 47, 66, 0.7),
 					rgba(46, 47, 66, 0.7)
 				),
-				url(../images/hero-bg-tabg@2x.jpg);
+				url(../images/hero-bg-tab@2x.jpg);
 		}
 	}
 
@@ -74,25 +74,6 @@
 		}
 	}
 
-	/* .features-list-icon {
-		display: none;
-	}
-
-	.products {
-		display: none;
-	}
-
-	.feauters-list {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 24px;
-		row-gap: 72px;
-	}
-
-	.features-list-title {
-		text-align: start;
-	} */
-
 	.features-list-item {
 		width: calc((100% - 24px) / 2);
 	}
@@ -107,13 +88,9 @@
 		justify-content: center;
 	}
 
-	.customers-list-link {
+	.customers-link {
 		width: 168px;
 	}
-	/* 
-	.customers-list-item {
-		width: calc((100% - 48px) / 3);
-	} */
 
 	.footer-wrapper {
 		display: flex;
@@ -151,16 +128,13 @@
 		width: 264px;
 		margin-right: 24px;
 	}
-	/* .portfolio {
-	padding-top: 64px;
-	padding-bottom: 648px;
-} */
+
 	.projects-foto {
 		width: 356px;
 		height: 300px;
 	}
 
-	.project-list-item {
+	.projects-item {
 		width: calc((100% - 24px) / 2);
 	}
 }
