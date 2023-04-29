@@ -89,6 +89,7 @@
 
 	.section-footer {
 		display: flex;
+		padding: 0 15px;
 	}
 
 	.footer-logo-description {
