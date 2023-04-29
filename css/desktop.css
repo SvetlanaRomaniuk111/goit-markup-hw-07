@@ -5,35 +5,35 @@
 @media screen and (min-width: 1158px) {
 	.container {
 		max-width: 1158px;
-		padding-left: 15px;
-		padding-right: 15px;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 	.header-container {
 		display: flex;
 		align-items: center;
-		padding-top: 24px;
-		padding-bottom: 24px;
 	}
 
 	.contacts-list {
 		display: flex;
+		gap: 40px;
 	}
 
 	.contacts {
+		padding-top: 24px;
+		padding-bottom: 24px;
 		font-size: 16px;
 		line-height: 1.5;
 		letter-spacing: 0.02em;
-		margin-right: 40px;
 	}
 
 	.hero {
-		width: 1440px;
+		max-width: 1440px;
 		padding-top: 188px;
 		padding-bottom: 188px;
 		background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
+	}
+
+	.hero-title {
+		margin-bottom: 48px;
 	}
 
 	@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
@@ -45,30 +45,20 @@
 		}
 	}
 
-	.hero-btn {
-		margin-top: 48px;
-	}
-
 	.about {
 		padding-top: 120px;
 		padding-bottom: 120px;
 	}
 
-	.about-list-title {
-		display: flex;
-		align-items: start;
-		font-weight: 500;
-		font-size: 20px;
-		line-height: 1.2;
-	}
-
 	.about-list-item {
+		flex-basis: calc((100% - 72px) / 4);
 		width: 264px;
 	}
 
-	.about-list {
-		display: flex;
-		gap: 24px;
+	.about-list-title {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
 	}
 
 	.about-description {
@@ -101,36 +91,24 @@
 		display: flex;
 	}
 
-	.footer-wrapper {
-		margin-left: 0;
-	}
-
 	.footer-logo-description {
 		text-align: start;
-		margin-right: 0;
-		margin-bottom: 0;
-	}
-
-	.footer-modal-form-wrapper {
-		display: flex;
-	}
-
-	.footer-modal-form {
-		margin-left: 80px;
+		margin-right: 120px;
 	}
 
 	.footer-social {
-		margin-left: 120px;
-		margin-bottom: 0;
+		margin-right: 80px;
 	}
 
 	.footer-media-title {
 		text-align: start;
 	}
-
-	.modal-form-field {
-		margin-bottom: 0;
+	.subscribe {
+		display: block;
 	}
+	/* .modal-form-field {
+		margin-bottom: 0;
+	} */
 
 	.projects-foto {
 		width: 360px;

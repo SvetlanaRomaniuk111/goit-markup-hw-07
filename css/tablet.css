@@ -11,25 +11,14 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 1157px) {
-		.header-contacts {
-			margin-left: auto;
-			margin-top: 16px;
-			margin-bottom: 16px;
-		}
-
-		.contacts-item:not(:last-child) {
-			margin-bottom: 12px;
-		}
-	}
 	.contacts {
 		font-size: 12px;
-		line-height: 1.16;
+		line-height: 1.17;
 		letter-spacing: 0.04em;
 	}
 
 	.hero {
-		width: 768px;
+		max-width: 768px;
 		background-image: linear-gradient(
 				rgba(46, 47, 66, 0.7),
 				rgba(46, 47, 66, 0.7)
@@ -55,27 +44,21 @@
 		font-size: 56px;
 		line-height: 1.07;
 		text-transform: none;
+		margin-bottom: 36px;
 	}
 
-	.hero-btn {
-		margin-top: 36px;
+	.about-list {
+		gap: 24px;
+		row-gap: 72px;
 	}
 
-	@media screen and (max-width: 1440px) {
-		.about-list {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 24px;
-			row-gap: 72px;
-		}
-
-		.about-list-title {
-			text-align: start;
-		}
+	.about-list-title {
+		text-align: start;
 	}
 
 	.about-list-item {
 		width: calc((100% - 24px) / 2);
+		width: 356px;
 	}
 
 	.team-list {
@@ -85,18 +68,17 @@
 
 	.customers-list {
 		gap: 24px;
+		row-gap: 72px;
 		justify-content: center;
 	}
 
 	.customers-link {
 		width: 168px;
 	}
-
-	.footer-wrapper {
-		display: flex;
-		margin-left: 108px;
+	.section-footer {
+		padding: 0 108px;
+		justify-content: left;
 	}
-
 	.footer-logo {
 		display: flex;
 		align-items: start;
@@ -110,25 +92,23 @@
 		text-align: start;
 	}
 
-	.footer-modal-form {
-		text-align: start;
-		margin-left: 108px;
+	.subscribe {
+		display: block;
+		gap: 24px;
 	}
 
-	.footer-modal-form-wrapper {
-		display: flex;
-	}
-
-	.footer-modal-form-subscribe-btn {
+	.subscribe-btn {
 		margin-right: 0;
 		margin-left: 0;
 	}
 
 	.footer-form-email {
 		width: 264px;
-		margin-right: 24px;
+		/* margin-right: 24px; */
 	}
-
+	.filters-list {
+		justify-content: center;
+	}
 	.projects-foto {
 		width: 356px;
 		height: 300px;
