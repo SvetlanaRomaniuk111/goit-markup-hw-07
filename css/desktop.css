@@ -6,7 +6,9 @@
 	.container {
 		max-width: 1158px;
 	}
-
+	.header .container {
+		max-width: 1158px;
+	}
 	.header-container {
 		display: flex;
 		align-items: center;
@@ -43,6 +45,10 @@
 		.hero {
 			background-image: var(--bg-gradient), url(../images/hero-bg@2x.jpg);
 		}
+	}
+
+	.about .container {
+		max-width: 1158px;
 	}
 
 	.about {
