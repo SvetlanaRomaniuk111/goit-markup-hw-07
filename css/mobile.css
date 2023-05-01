@@ -20,10 +20,6 @@
 		width: 100%;
 		height: 100%;
 	}
-	/* .menu {
-		max-width: 428px;
-		width: 100%;
-	} */
 }
 
 @media screen and (max-width: 767px) {
@@ -142,8 +138,17 @@
 
 	.mobile-social-list {
 		display: flex;
-		/* gap: 56px; */
-		justify-content: space-evenly;
+		gap: 56px;
+	}
+
+	@media screen and (max-width: 427px) {
+		.mobile-menu-phone {
+			font-size: 26px;
+			line-height: 1.2;
+		}
+		.mobile-social-list {
+			gap: 28px;
+		}
 	}
 
 	.header-list {

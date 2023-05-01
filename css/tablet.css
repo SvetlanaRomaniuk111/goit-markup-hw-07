@@ -58,7 +58,7 @@
 	}
 
 	.about .container {
-		max-width: 738px;
+		max-width: 768px;
 	}
 
 	.about-list {
@@ -124,6 +124,20 @@
 	.filters-list {
 		justify-content: center;
 	}
+
+	.portfolio {
+		padding-top: 64px;
+		padding-bottom: 96px;
+	}
+
+	.filters-list {
+		margin-bottom: 64px;
+	}
+
+	.portfolio .container {
+		max-width: 768px;
+	}
+
 	.projects-foto {
 		width: 356px;
 		height: 300px;

@@ -13,6 +13,9 @@
 		display: flex;
 		align-items: center;
 	}
+	.contacts-item:not(:last-child) {
+		margin-bottom: 0;
+	}
 
 	.contacts-list {
 		display: flex;
@@ -113,9 +116,19 @@
 	.subscribe {
 		display: block;
 	}
-	/* .modal-form-field {
-		margin-bottom: 0;
-	} */
+
+	.portfolio {
+		padding-top: 100px;
+		padding-bottom: 120px;
+	}
+
+	.filters-list {
+		margin-bottom: 72px;
+	}
+
+	.portfolio .container {
+		max-width: 1158px;
+	}
 
 	.projects-foto {
 		width: 360px;
