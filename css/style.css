@@ -594,7 +594,6 @@ button {
 
 .footer-form-email::placeholder {
 	font-size: 12px;
-	/* line-height: 2; */
 	letter-spacing: 0.04em;
 	color: var(--main-bgr-color);
 }
@@ -685,6 +684,13 @@ button {
 .projects-link-img-wrapper {
 	position: relative;
 	overflow: hidden;
+}
+
+@media screen and (max-width: 427px) {
+	.projects-foto {
+		max-width: 396px;
+		width: 100%;
+	}
 }
 
 .overlay {
