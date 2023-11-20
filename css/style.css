@@ -631,7 +631,7 @@ button {
 
 .filters-list {
 	display: flex;
-	justify-content: flex-start;
+	/* justify-content: flex-start; */
 	margin-bottom: 48px;
 	gap: 24px;
 	flex-wrap: wrap;
